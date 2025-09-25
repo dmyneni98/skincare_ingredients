@@ -5,9 +5,7 @@ import Main_Page_Logo from "../../assets/Main_Page_Logo.png"
 const Welcome = () => {
   return (
     <View>
-      <Image source={Main_Page_Logo} 
-      style={{width: '100%', height: '100%'}}
-      />
+      <Image style={styles.patternbg} source={Main_Page_Logo} />
     </View>
   )
 }
