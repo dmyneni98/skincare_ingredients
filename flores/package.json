@@ -6,11 +6,17 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "android:emulator": "REACT_NATIVE_PACKAGER_HOSTNAME=10.0.2.2 expo start --android",
+    "android:localhost": "REACT_NATIVE_PACKAGER_HOSTNAME=10.0.2.2 expo start --localhost --android",
+    "start:localhost": "REACT_NATIVE_PACKAGER_HOSTNAME=10.0.2.2 expo start --localhost",
+    "run:android": "expo run:android"
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "start:tunnel": "expo start --tunnel"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.9.3",
+    "@expo/metro-runtime": "~4.0.1",
     "@react-navigation/native": "^7.0.15",
     "@react-navigation/stack": "^7.1.2",
     "aws-amplify": "^6.13.5",
@@ -23,11 +29,13 @@
     "express": "^4.21.2",
     "mongoose": "^8.9.1",
     "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-native": "^0.76.9",
     "react-native-gesture-handler": "~2.20.2",
     "react-native-reanimated": "~3.16.1",
     "react-native-safe-area-context": "^4.12.0",
     "react-native-screens": "~4.4.0",
+    "react-native-web": "~0.19.13",
     "react-navigation": "^4.4.4",
     "react-navigation-stack": "^2.10.4"
   },
